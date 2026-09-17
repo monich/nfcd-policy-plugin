@@ -1,0 +1,7 @@
+nfcd plugin which blocks NFC if NfcEnabled=false is found in the [policy]
+section of /var/lib/policy/policy.conf file, i.e.
+
+[policy]
+NfcEnabled=false
+
+If NfcEnabled is true, non-parseable or missing at all, NFC is not blocked.
